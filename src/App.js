@@ -67,7 +67,7 @@ setTasks(tasks.map(task=> task.id===id ? {...task , reminder:!task.reminder}: ta
 
 return (
 <div>
-<Header title="Task manager testing git" onAdding={()=>setShowAddTasks(!showaddtasks)} showtasks={showaddtasks} />
+<Header title="Task manager testing git still testing"  onAdding={()=>setShowAddTasks(!showaddtasks)} showtasks={showaddtasks} />
 
 {showaddtasks?<Addtasks onAdd={addTasks} />: ""}
 {tasks.length>0 ? <Tasks tasks={tasks} onToggle={togglereminder}  onDelete={deleteTask}/> : "No tasks to show"}
